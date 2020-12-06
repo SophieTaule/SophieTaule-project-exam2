@@ -1,0 +1,158 @@
+
+@import "./variables/_footer";
+@import "./variables/_card";
+@import "./variables/_detail";
+@import "./variables/_form";
+@import "./variables/_contact";
+@import "./variables/_tabs";
+@import "./variables/_order";
+@import "./variables/_search";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark: #4A5458;
+  --clr-light: #fff;  
+  --clr-grey: #707070;  
+  --clr-primary: #EC6E26;
+  --clr-primary-hover: #af4c13;
+  --clr-accent: #4B88A2;
+
+  --ff-primary: 'comfortaa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --ff-accent: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --fs-h1: 2rem;
+    --fs-h2: 1.3rem;
+    --fs-h3: 1.25rem;
+    --fs-h4: 1rem;
+        --fs-body: 0.95rem;
+        --fs-small: 0.75rem;
+  --box: 0 4px 2px -2px rgba(68, 68, 68, 0.178);
+  --border: rgb(224, 224, 224);
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  min-height: 100vh;
+  place-items: center;  
+  color: var(--clr-dark);
+  background: var(--clr-light);
+}
+
+h1, h2 {
+  font-family: var(--ff-accent);
+  margin: 25px 0px 25px 0px;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size:  var(--fs-h2);
+}
+
+a {
+  color: var(--clr-primary);
+}
+a:hover {
+  color: var(--clr-primary-hover);
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100em;
+  justify-content: center;
+}
+
+span {
+  font-size: var(--fs-small);
+  display: block;
+  color: var(--clr-grey);
+}
+
+.navigation {
+  background: white;
+}
+.nav__logo {
+  width: 30px;
+  height: 25px;
+  margin: 1em;
+}
+.navbar__title {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+}
+.navbar__link:hover {
+  color: var(--clr-primary);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--clr-primary);
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+  color: var(--clr-primary);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:active {
+  color: var(--clr-primary);
+}
+.dropdown-menu {
+  width: 25em;
+}
+
+.review {
+  font-size: var(--fs-h2);
+  font-family: var(--ff-primary);
+  margin-bottom: 1.4em;
+  font-weight: var(--fw-regular);
+}
+
+.review__text--rating {
+  color: var(--clr-primary);
+}
+
+.review__quote {
+  font-size: var(--fs-h1);
+}
+
+.login {
+  background: var(--clr-accent);
+  border-color: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+ &:hover, &:focus {
+  background: var(--clr-dark);
+  border-color: inherit;
+}
+}
+
+.nav__admin {
+  color:var(--clr-accent);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  &:hover {
+    color: var(--clr-dark);
+  }
+}
+@media (max-width: 600px) {
+  h1 { font-size: var(--fs-h2) }
+  h2 { font-size: var(--fs-h3) }
+  h3 { font-size: var(--fs-h4) }
+  .dropdown-menu, 
+  .navbar__dropdown {
+    width: 17em;
+  }
+}

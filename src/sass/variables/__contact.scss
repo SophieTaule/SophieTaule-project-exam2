@@ -1,0 +1,17 @@
+.contact-container {
+    padding-bottom: 8em;
+}
+
+.contact__enquire--title,
+.contact__enquire--form {
+    margin: 1em;
+    font-family: var(--ff-primary);
+  }
+  
+  .contact__enquire--form {
+      font-size: var(--fs-h1);
+  }
+
+  .contact__enquire--title {
+    font-size: var(--fs-h2);
+}
